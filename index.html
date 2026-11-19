@@ -3,31 +3,32 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-   <meta name="google-site-verification" content="RjecXtKaaRfjfrV7dbvdybVVBD-SKlffAkEPB40-i24" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- SEO TITLE -->
-    <title>Kalimullah Afridi | Official Website & Portfolio</title>
+    <!-- WEBSITE TITLE -->
+    <title>Kalimullah Afridi | Official Portfolio & GitHub</title>
 
-    <!-- SEO DESCRIPTION -->
-    <meta name="description" content="Welcome to the official website of Kalimullah Afridi, also known as Kalim and Kalim Ullah. Explore his personal portfolio, GitHub profile, projects and skills.">
+    <!-- GOOGLE VERIFICATION -->
+    <meta name="google-site-verification" content="RjecXtKaaRfjfrV7dbvdybVVBD-SKlffAkEPB40-i24" />
+
+    <!-- SEO META TAGS -->
+    <meta name="description" content="Welcome to the official portfolio of Kalimullah Afridi, also known as Kalim and Kalim Ullah. Discover his projects, skills and GitHub profile.">
 
     <meta name="author" content="Kalimullah Afridi">
     <meta name="robots" content="index, follow">
     <meta name="theme-color" content="#0b1020">
 
-    <!-- CANONICAL URL -->
+    <!-- CANONICAL -->
     <link rel="canonical" href="https://kafridi1.github.io/kalimullah/">
 
     <!-- OPEN GRAPH -->
     <meta property="og:type" content="website">
     <meta property="og:title" content="Kalimullah Afridi | Official Portfolio">
-    <meta property="og:description" content="Explore the official portfolio and GitHub projects of Kalimullah Afridi.">
+    <meta property="og:description" content="Explore the official portfolio, projects and GitHub profile of Kalimullah Afridi.">
     <meta property="og:url" content="https://kafridi1.github.io/kalimullah/">
-    <meta property="og:image" content="https://kafridi1.github.io/kalimullah/og-image.jpg">
 
     <!-- TWITTER -->
-    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="Kalimullah Afridi">
     <meta name="twitter:description" content="Official personal portfolio and GitHub projects.">
 
@@ -45,25 +46,14 @@
       "url": "https://kafridi1.github.io/kalimullah/",
       "sameAs": [
         "https://github.com/kafridi1"
-      ],
-      "mainEntityOfPage": "https://kafridi1.github.io/kalimullah/"
+      ]
     }
     </script>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
 
     <style>
-    :root {
-        --bg: #0b1020;
-        --panel: #111a30;
-        --text: #eef2ff;
-        --muted: #a7b2cc;
-        --accent: #55dfc0;
-        --line: #27334e;
-    }
-
     * {
         margin: 0;
         padding: 0;
@@ -72,15 +62,15 @@
     }
 
     body {
-        background: var(--bg);
-        color: var(--text);
+        background: #0b1020;
+        color: #eef2ff;
         font-family: 'DM Sans', sans-serif;
         line-height: 1.7;
     }
 
     a {
-        color: inherit;
         text-decoration: none;
+        color: inherit;
     }
 
     .container {
@@ -90,8 +80,8 @@
     }
 
     header {
-        background: rgba(17,26,48,.95);
-        border-bottom: 1px solid var(--line);
+        background: #111a30;
+        border-bottom: 1px solid #27334e;
         position: sticky;
         top: 0;
         z-index: 100;
@@ -106,86 +96,89 @@
     }
 
     .logo {
-        font: 700 25px 'Space Grotesk', sans-serif;
-        color: var(--accent);
+        font-size: 25px;
+        font-weight: bold;
+        color: #55dfc0;
     }
 
     .navlinks {
         display: flex;
         flex-wrap: wrap;
-        gap: 20px;
+        gap: 18px;
     }
 
     .navlinks a {
+        color: #a7b2cc;
         font-size: 14px;
-        color: var(--muted);
     }
 
     .navlinks a:hover {
-        color: var(--accent);
+        color: #55dfc0;
     }
 
     .hero {
-        min-height: 570px;
+        min-height: 560px;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: flex-start;
-        padding: 80px 0;
+        padding: 75px 0;
     }
 
-    .eyebrow {
-        color: var(--accent);
-        font-weight: 700;
-        text-transform: uppercase;
-        letter-spacing: 3px;
+    .tagline {
+        color: #55dfc0;
         font-size: 13px;
+        font-weight: bold;
+        letter-spacing: 3px;
     }
 
     h1 {
-        font: 700 clamp(42px, 8vw, 76px)/1.15 'Space Grotesk', sans-serif;
+        font-family: 'Space Grotesk', sans-serif;
+        font-size: clamp(40px, 8vw, 75px);
+        line-height: 1.15;
         margin: 20px 0;
     }
 
     h1 span {
-        color: var(--accent);
+        color: #55dfc0;
     }
 
     .hero p {
+        color: #a7b2cc;
         max-width: 650px;
-        color: var(--muted);
         font-size: 18px;
     }
 
     .btn {
         display: inline-block;
-        background: var(--accent);
+        background: #55dfc0;
         color: #08101e;
-        padding: 13px 23px;
-        border-radius: 9px;
-        font-weight: 700;
+        padding: 13px 24px;
         margin-top: 25px;
+        border-radius: 9px;
+        font-weight: bold;
         transition: .2s;
     }
 
     .btn:hover {
-        transform: translateY(-3px);
         background: #8b9cff;
+        transform: translateY(-3px);
     }
 
     section {
-        padding: 80px 0;
-        border-top: 1px solid var(--line);
+        padding: 75px 0;
+        border-top: 1px solid #27334e;
     }
 
     h2 {
-        font: 700 36px 'Space Grotesk', sans-serif;
-        color: var(--accent);
-        margin-bottom: 22px;
+        font-family: 'Space Grotesk', sans-serif;
+        font-size: 35px;
+        color: #55dfc0;
+        margin-bottom: 20px;
     }
 
     section p {
-        color: var(--muted);
+        color: #a7b2cc;
         max-width: 800px;
     }
 
@@ -197,8 +190,8 @@
     }
 
     .card {
-        background: var(--panel);
-        border: 1px solid var(--line);
+        background: #111a30;
+        border: 1px solid #27334e;
         padding: 25px;
         border-radius: 15px;
         transition: .25s;
@@ -206,16 +199,12 @@
 
     .card:hover {
         transform: translateY(-5px);
-        border-color: var(--accent);
+        border-color: #55dfc0;
     }
 
     .card h3 {
-        color: var(--accent);
-        margin-bottom: 12px;
-    }
-
-    .card p {
-        font-size: 15px;
+        color: #55dfc0;
+        margin-bottom: 10px;
     }
 
     .contact {
@@ -227,33 +216,33 @@
     }
 
     footer {
-        background: var(--panel);
-        text-align: center;
+        background: #111a30;
         padding: 25px;
-        color: var(--muted);
+        text-align: center;
+        color: #a7b2cc;
     }
 
     @media(max-width:650px) {
         nav {
             flex-direction: column;
-            padding: 17px 0;
+            padding: 18px 0;
         }
 
         .navlinks {
             justify-content: center;
-            gap: 13px;
+            gap: 12px;
         }
 
         .hero {
-            min-height: 470px;
+            min-height: 450px;
         }
 
         section {
-            padding: 60px 0;
+            padding: 55px 0;
         }
 
         h2 {
-            font-size: 30px;
+            font-size: 29px;
         }
     }
     </style>
@@ -264,7 +253,7 @@
 <header>
     <div class="container">
         <nav>
-            <a class="logo" href="#home">Kalimullah.</a>
+            <a href="#home" class="logo">Kalimullah.</a>
 
             <div class="navlinks">
                 <a href="#home">Home</a>
@@ -279,119 +268,117 @@
 
 <main>
 
-    <!-- HOME -->
     <section class="hero container" id="home">
-        <div class="eyebrow">Official Personal Portfolio</div>
+        <div class="tagline">OFFICIAL PERSONAL PORTFOLIO</div>
 
         <h1>I'm <span>Kalimullah Afridi</span></h1>
 
         <p>
             Welcome to my official personal website.
-            Discover my background, skills, projects
-            and GitHub development journey.
+            Also known as Kalim, Kalim Ullah and Kalim Afridi.
+            Explore my background, skills, projects and
+            digital journey.
         </p>
 
-        <a class="btn" href="https://github.com/kafridi1"
+        <a class="btn"
+           href="https://github.com/kafridi1"
            target="_blank" rel="noopener noreferrer">
-            Visit My GitHub →
+           Visit My GitHub →
         </a>
     </section>
 
-    <!-- ABOUT -->
     <section id="about">
         <div class="container">
             <h2>About Kalimullah Afridi</h2>
 
             <p>
                 Hello! My name is Kalimullah Afridi.
-                I am also known as Kalim and Kalim Ullah.
-                This is my official portfolio where I share
-                my personal journey, projects, interests
-                and digital work.
+                This is my official personal portfolio.
+                I enjoy learning new skills, exploring technology
+                and sharing my work online.
             </p>
 
             <br>
 
             <p>
-                You can explore my GitHub profile and
-                discover the projects and skills I share online.
+                You can find my projects and public work
+                through my official GitHub profile.
             </p>
         </div>
     </section>
 
-    <!-- SKILLS -->
     <section id="skills">
         <div class="container">
             <h2>My Skills</h2>
 
             <p>
-                This section highlights my skills and
-                technologies. Update it with your actual experience.
+                My skills and interests include technology,
+                digital creativity and learning new tools.
+                Update this section with your real skills.
             </p>
 
             <div class="cards">
                 <div class="card">
                     <h3>Web Development</h3>
-                    <p>Add your actual web development skills here.</p>
+                    <p>Add your actual development skills here.</p>
                 </div>
 
                 <div class="card">
                     <h3>Technology</h3>
-                    <p>Share the tools and technologies you use.</p>
+                    <p>Share the tools you actually use.</p>
                 </div>
 
                 <div class="card">
-                    <h3>Creative Projects</h3>
-                    <p>Showcase your real work and achievements.</p>
+                    <h3>Creative Work</h3>
+                    <p>Show your genuine projects and experience.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- PROJECTS -->
     <section id="projects">
         <div class="container">
             <h2>My GitHub Projects</h2>
 
             <p>
-                Explore my public GitHub profile and discover
-                my projects, experiments and development work.
+                Visit my official GitHub profile to explore
+                my repositories, projects and development work.
             </p>
 
             <div class="cards">
                 <div class="card">
-                    <h3>GitHub Profile</h3>
-                    <p>Visit my official GitHub profile.</p>
+                    <h3>Official GitHub</h3>
+                    <p>Explore my public repositories.</p>
+
                     <a class="btn"
                        href="https://github.com/kafridi1"
                        target="_blank" rel="noopener noreferrer">
-                       View Profile →
+                       View GitHub →
                     </a>
                 </div>
 
                 <div class="card">
                     <h3>Personal Portfolio</h3>
-                    <p>Explore my official portfolio website.</p>
-                    <a class="btn" href="#home">Explore Website →</a>
+                    <p>My official personal website.</p>
+                    <a class="btn" href="#home">Explore Portfolio →</a>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- CONTACT -->
     <section id="contact" class="contact">
         <div class="container">
             <h2>Connect With Me</h2>
 
             <p>
-                Want to explore my work or connect with me?
-                Visit my official GitHub profile.
+                Explore my work and connect with me
+                through my official GitHub profile.
             </p>
 
             <a class="btn"
                href="https://github.com/kafridi1"
                target="_blank" rel="noopener noreferrer">
-               Connect on GitHub →
+               Visit My GitHub →
             </a>
         </div>
     </section>
