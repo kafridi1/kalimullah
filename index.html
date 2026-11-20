@@ -5,9 +5,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Kalimullah Afridi | Official Portfolio</title>
+  <title>Kalimullah Afridi | Official Personal Portfolio</title>
 
-  <meta name="description" content="Explore the official portfolio of Kalimullah Afridi, also known as Kalim. Discover my profile, skills, web development projects and work.">
+  <meta name="description" content="Welcome to the official portfolio of Kalimullah Afridi, also known as Kalim. Explore my profile, skills, projects and web development journey.">
   <meta name="author" content="Kalimullah Afridi">
   <meta name="robots" content="index, follow">
 
@@ -16,8 +16,8 @@
 
   <meta name="google-site-verification" content="RjecXtKaaRfjfrV7dbvdybVVBD-SKlffAkEPB40-i24">
 
-  <meta property="og:title" content="Kalimullah Afridi | Official Portfolio">
-  <meta property="og:description" content="Welcome to my personal portfolio. Explore my skills, profile and projects.">
+  <meta property="og:title" content="Kalimullah Afridi | Personal Portfolio">
+  <meta property="og:description" content="Explore my personal profile, skills and projects.">
   <meta property="og:url" content="https://kafridi1.github.io/kalimullah/">
   <meta property="og:type" content="website">
   <meta property="og:image" content="https://kafridi1.github.io/kalimullah/kalimullah.png">
@@ -40,12 +40,12 @@
     :root {
       --bg: #080d1a;
       --surface: #111a2c;
-      --surface2: #17243a;
       --blue: #38bdf8;
       --purple: #818cf8;
       --white: #f8fafc;
       --muted: #a7b5ca;
       --border: rgba(148,163,184,.16);
+      --green: #25D366;
     }
 
     * {
@@ -56,7 +56,7 @@
 
     html {
       scroll-behavior: smooth;
-      scroll-padding-top: 85px;
+      scroll-padding-top: 90px;
     }
 
     body {
@@ -74,13 +74,13 @@
       margin: auto;
     }
 
-    /* Navigation */
+    /* NAVIGATION */
 
     header {
       position: sticky;
       top: 0;
       z-index: 100;
-      background: rgba(8,13,26,.92);
+      background: rgba(8,13,26,.94);
       backdrop-filter: blur(16px);
       border-bottom: 1px solid var(--border);
     }
@@ -95,16 +95,15 @@
 
     .logo {
       color: var(--blue);
-      font-size: 23px;
+      font-size: 24px;
       font-weight: 800;
-      letter-spacing: -.8px;
     }
 
     .logo span { color: white; }
 
     nav {
       display: flex;
-      gap: 25px;
+      gap: 22px;
       align-items: center;
     }
 
@@ -123,10 +122,49 @@
       border-radius: 8px;
     }
 
-    /* Hero */
+    /* BUTTONS */
+
+    .buttons {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 13px;
+      margin-top: 27px;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      padding: 13px 23px;
+      border-radius: 9px;
+      font-weight: bold;
+      color: white;
+      transition: .3s;
+    }
+
+    .btn:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 10px 25px #0284c733;
+    }
+
+    .btn-primary {
+      background: linear-gradient(120deg,#0284c7,#6366f1);
+    }
+
+    .btn-outline {
+      border: 1px solid #46546b;
+    }
+
+    .btn-whatsapp {
+      background: var(--green);
+      color: #052e16;
+    }
+
+    /* HERO */
 
     .hero {
-      min-height: 690px;
+      min-height: 680px;
       display: flex;
       align-items: center;
       position: relative;
@@ -140,7 +178,7 @@
       height: 450px;
       background: #2563eb;
       filter: blur(180px);
-      opacity: .19;
+      opacity: .2;
       right: -100px;
       top: 80px;
       border-radius: 50%;
@@ -182,54 +220,23 @@
 
     .hero h2 {
       color: #d1dbea;
-      font-size: 23px;
+      font-size: 22px;
       margin-bottom: 15px;
     }
 
     .hero p {
       color: var(--muted);
       max-width: 570px;
-      margin-bottom: 30px;
       font-size: 16px;
-    }
-
-    .buttons {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 13px;
-    }
-
-    .btn {
-      display: inline-block;
-      padding: 13px 23px;
-      border-radius: 9px;
-      font-weight: bold;
-      transition: .3s;
-    }
-
-    .btn-primary {
-      color: white;
-      background: linear-gradient(120deg,#0284c7,#6366f1);
-    }
-
-    .btn-outline {
-      color: white;
-      border: 1px solid #46546b;
-    }
-
-    .btn:hover {
-      transform: translateY(-3px);
-      box-shadow: 0 10px 30px #0284c733;
     }
 
     .photo-wrap {
       display: flex;
       justify-content: center;
-      position: relative;
     }
 
     .photo-frame {
-      width: min(350px, 80vw);
+      width: min(350px,80vw);
       aspect-ratio: 1;
       border-radius: 35px;
       padding: 5px;
@@ -244,24 +251,23 @@
       object-fit: cover;
       border-radius: 31px;
       display: block;
-      background: var(--surface2);
+      background: var(--surface);
     }
 
-    /* General sections */
+    /* GENERAL SECTIONS */
 
     section:not(.hero) {
-      padding: 90px 0;
+      padding: 85px 0;
     }
 
     .section-heading {
       text-align: center;
-      margin-bottom: 48px;
+      margin-bottom: 45px;
     }
 
     .section-heading small {
       color: var(--blue);
       font-weight: bold;
-      text-transform: uppercase;
       letter-spacing: 3px;
     }
 
@@ -275,18 +281,18 @@
       margin-top: 10px;
     }
 
-    /* About */
+    /* ABOUT */
 
     .about-box {
       display: grid;
       grid-template-columns: 1fr 1fr;
-      gap: 35px;
+      gap: 30px;
       align-items: center;
     }
 
     .about-text, .info-box {
       background: var(--surface);
-      padding: 32px;
+      padding: 30px;
       border: 1px solid var(--border);
       border-radius: 18px;
     }
@@ -304,17 +310,16 @@
     .info-row {
       display: flex;
       justify-content: space-between;
-      gap: 15px;
-      padding: 14px 0;
+      gap: 12px;
+      padding: 13px 0;
       border-bottom: 1px solid var(--border);
     }
 
     .info-row:last-child { border: 0; }
-
     .info-row span:first-child { color: var(--muted); }
     .info-row span:last-child { color: var(--blue); }
 
-    /* Skills */
+    /* SKILLS */
 
     .skills-grid {
       display: grid;
@@ -350,7 +355,7 @@
       font-size: 14px;
     }
 
-    /* Projects */
+    /* PROJECTS */
 
     .projects-grid {
       display: grid;
@@ -387,10 +392,10 @@
       font-weight: bold;
     }
 
-    /* Contact */
+    /* CONTACT */
 
     .contact-box {
-      max-width: 700px;
+      max-width: 750px;
       margin: auto;
       text-align: center;
       background: linear-gradient(135deg,#12243c,#171d3a);
@@ -409,7 +414,14 @@
       margin-bottom: 25px;
     }
 
-    /* Footer */
+    .contact-buttons {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 12px;
+    }
+
+    /* FOOTER */
 
     footer {
       padding: 27px 10px;
@@ -421,7 +433,27 @@
 
     footer a { color: var(--blue); }
 
-    /* Responsive */
+    /* WHATSAPP FLOATING BUTTON */
+
+    .whatsapp-float {
+      position: fixed;
+      right: 22px;
+      bottom: 22px;
+      z-index: 200;
+      background: var(--green);
+      color: #052e16;
+      padding: 13px 19px;
+      border-radius: 50px;
+      font-weight: bold;
+      box-shadow: 0 5px 25px #0006;
+      transition: .3s;
+    }
+
+    .whatsapp-float:hover {
+      transform: translateY(-4px);
+    }
+
+    /* MOBILE */
 
     @media(max-width:800px) {
       .hero-grid {
@@ -430,9 +462,13 @@
         gap: 45px;
       }
 
-      .hero p { margin-left: auto; margin-right: auto; }
+      .hero p {
+        margin-left: auto;
+        margin-right: auto;
+      }
+
       .buttons { justify-content: center; }
-      .photo-wrap { grid-row: 1; }
+
       .photo-frame { width: min(280px,70vw); }
 
       .about-box { grid-template-columns: 1fr; }
@@ -446,7 +482,7 @@
       }
 
       nav {
-        gap: 13px;
+        gap: 12px;
         flex-wrap: wrap;
         justify-content: center;
       }
@@ -456,22 +492,24 @@
 
       .hero { min-height: auto; }
       .hero-grid { padding: 65px 0; }
-      .hero h1 { letter-spacing: -1px; }
 
-      section:not(.hero) { padding: 65px 0; }
+      section:not(.hero) { padding: 60px 0; }
 
       .skills-grid, .projects-grid {
         grid-template-columns: 1fr;
       }
 
       .about-text, .info-box { padding: 22px; }
+
+      .whatsapp-float {
+        right: 12px;
+        bottom: 12px;
+      }
     }
 
-    @media(prefers-reduced-motion: reduce) {
+    @media(prefers-reduced-motion:reduce) {
       html { scroll-behavior: auto; }
-      *, *::before, *::after {
-        transition-duration: .01ms !important;
-      }
+      *, *::before, *::after { transition-duration: .01ms !important; }
     }
   </style>
 </head>
@@ -519,12 +557,9 @@
 
       <div class="photo-wrap">
         <div class="photo-frame">
-          <img
-            src="kalimullah.png"
-            alt="Portrait of Kalimullah Afridi"
-            width="600"
-            height="600"
-          >
+          <img src="kalimullah.png"
+               alt="Kalimullah Afridi portrait"
+               width="600" height="600">
         </div>
       </div>
 
@@ -568,22 +603,18 @@
             <span>Name</span>
             <span>Kalimullah Afridi</span>
           </div>
-
           <div class="info-row">
             <span>Also known as</span>
             <span>Kalim</span>
           </div>
-
           <div class="info-row">
             <span>Interest</span>
             <span>Technology</span>
           </div>
-
           <div class="info-row">
             <span>Field</span>
             <span>Web Development</span>
           </div>
-
           <div class="info-row">
             <span>GitHub</span>
             <span>kafridi1</span>
@@ -727,14 +758,27 @@
 
         <p>
           Thank you for visiting my portfolio.
-          Explore my projects and follow my work on GitHub.
+          Feel free to connect with me on WhatsApp
+          or explore my work on GitHub.
         </p>
 
-        <a class="btn btn-primary"
-           href="https://github.com/kafridi1"
-           target="_blank" rel="noopener noreferrer">
-          Visit My GitHub
-        </a>
+        <div class="contact-buttons">
+
+          <a class="btn btn-whatsapp"
+             href="https://wa.me/923275194757"
+             target="_blank"
+             rel="noopener noreferrer">
+            WhatsApp Me
+          </a>
+
+          <a class="btn btn-primary"
+             href="https://github.com/kafridi1"
+             target="_blank"
+             rel="noopener noreferrer">
+            Visit My GitHub
+          </a>
+
+        </div>
       </div>
 
     </div>
@@ -749,6 +793,15 @@
   </p>
   <p>Designed with care by Kalimullah Afridi.</p>
 </footer>
+
+<!-- FLOATING WHATSAPP BUTTON -->
+<a class="whatsapp-float"
+   href="https://wa.me/923275194757"
+   target="_blank"
+   rel="noopener noreferrer"
+   aria-label="Contact Kalimullah on WhatsApp">
+  WhatsApp
+</a>
 
 <script>
   document.getElementById("year").textContent =
